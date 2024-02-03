@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background: hsl(30, 54%, 90%);
+}
+
+header img{
+    width: 100%;
+    display: none;
+}
+
+.container {
+    margin: 3rem auto;
+    padding: 2rem;
+    background: hsl(0, 0%, 100%);
+    width: 40%;
+    border-radius: 1rem;
+
+}
+
+h1, h2{
+    font-family: 'Young Serif', sans-serif;
+}
+
+h2{
+    color: hsl(30, 10%, 34%);
+}
+
+.container .intro{
+    display: flex;
+    flex-direction: column;
+}
+
+.container img{
+    width: 100%;
+    border-radius: 1rem;
+    align-self: center;
+}
+
+.container .intro h1{
+    margin: 1rem 0;
+}
+
+.container .intro p{
+    line-height: 2;
+}
+
+.container .prep {
+    /* width: 90%; */
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(330, 100%, 98%);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.container .prep h3{
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 1rem;
+}
+
+.container .prep ul{
+    padding-left: 2rem;
+}
+
+.container .prep ul li{
+    padding-bottom: .5rem;
+}
+
+.container .prep ul li span{
+    font-weight: 600;
+    color: hsl(24, 5%, 18%);
+}
+
+.container .ingredients,
+.container .instructions{
+    margin: 2rem 0;
+    border-bottom: 1px dotted hsl(30, 18%, 87%);
+    padding-bottom: 2rem;
+}
+
+.container .ingredients ul,
+.container .instructions ol{
+    margin-top: 1rem;
+    padding-left: 1rem;
+    line-height: 2;
+}
+
+.container .ingredients ul li,
+.container .instructions ol li{
+    padding-bottom: .5rem;
+}
+
+.container .instructions ol li{
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+}
+
+.container .instructions ol li span{
+    color: black;
+    font-weight: 400;
+}
+
+.container .nutrition h2,
+.container .nutrition > p{
+    margin-bottom: 1rem;
+    line-height: 2;
+}
+
+.container .nutrition .nutrition-table{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .nutrition .nutrition-table .row{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted hsl(30, 18%, 87%);
+}
+
+.container .nutrition .nutrition-table .row .left-col::before{
+    content: '\a0 \a0 \a0 \a0 \a0 \a0';
+}
+
+.container .nutrition .nutrition-table .row .right-col{
+    font-weight: 700;
+    color: hsl(30, 10%, 34%);
+}
+
+.container .nutrition .nutrition-table .row:last-child{
+    border: none;
+}
+
+@media (max-width: 960px) and (min-width: 601px) {
+    .container{
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding-top: 0;
+    }
+
+    .container img{
+        display: none;
+    }
+
+    header img{
+        display: inline-block;
+    }
+
+
+}
